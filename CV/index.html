@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #header_1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        #header_2 {
+            font-size: 1rem;
+            text-align: center;
+        }
+        #header_3 {
+            height: 10rem;
+            text-align: center;
+        }
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 1rem;
+            margin-right: 0.3rem;
+        }
+        span {
+            display: inline-flex;
+            vertical-align: middle;
+            align-items: center;
+            background-color: red;
+        }
+        #content {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+    <body>
+        <div id='header'>
+            <div id="header_1">KeonMin Nam</div>
+            <div id="header_2">AI Researcher</div>
+            <div id="header_3">
+                <span><img class='icon' src="email.svg" style="margin-left:0"/>gibiee@naver.com</span>
+                <span><img class='icon' src="github.svg"/>GitHub</span>
+                <span><img class='icon' src="notion.svg"/>Portfolio</span> 
+            </div>
+
+        </div>
+        <div id='content'>
+            <span>컨텐츠가 들어가는 부분</span>
+        </div>
+    </body>
+
+    <script>
+        window.getComputedStyle(document.getElementById('header_1')).fontSize
+
+        // https://www.svgrepo.com/vectors/email/
+        // vertical-align: middle;
+        // vertical-align : 상위 요소 범위 안에서 세로정렬
+        // align-items : 현재 요소 범위 안에서 세로정렬
+    </script>
+</html>
+
+
