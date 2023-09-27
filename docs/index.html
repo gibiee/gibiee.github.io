@@ -2,145 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        /* HEADER */
-        #header {
-            background-color: aliceblue;
-        }
-        #header_name {
-            font-size: 2rem;
-            text-align: center;
-        }
-        #header_job {
-            font-size: 1rem;
-            text-align: center;
-        }
-        #header_links {
-            text-align: center;
-        }
-        .header_span {
-            display: inline-flex;
-            vertical-align: middle;
-            align-items: center;
-        }
-        .header_icon {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-left: 1rem;
-            margin-right: 0.3rem;
-        }
-        
-        /* CONTENTS */
-        hr {
-            border: 0.1rem solid black;
-        }
-
-        /* EDUCATION */
-        #edu {
-            background-color: lightyellow;
-            margin-top: 3rem;
-        }
-        #edu_title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .edu_name {
-            font-weight: bold;
-        }
-
-        /* EXPERIENCE */
-        #work {
-            background-color: deepskyblue;
-            margin-top: 3rem;
-        }
-        #work_title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .work_name {
-            font-weight: bold;
-        }
-        .work_pos {
-            float: right;
-            font-style: italic;
-        }
-        .work_job {
-            font-size: 1rem;
-        }
-        .work_ul {
-            margin-top: 0;
-            padding-left: 0;
-            margin-left: 3rem;
-        }
-        .work_li {
-            font-size: 1.3rem;
-        }
-
-        #paper {
-            background-color: orange;
-            margin-top: 3rem;
-        }
-        #paper_title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        #div_test {
-            height: 10rem;
-            background-color: red;
-            text-align: center;
-        }
-        #span_test {
-            background-color: lightblue;
-            display: inline-flex;
-            align-items: center;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <div id='header'>
+        <div id="header">
             <div id="header_name">KeonMin Nam</div>
             <div id="header_job">AI Researcher</div>
             <div id="header_links">
-                <span class="header_span"><img class='header_icon' src="email.svg" style="margin-left:0"/>gibiee@naver.com</span>
-                <span class="header_span"><img class='header_icon' src="github.svg"/><a href="https://github.com/gibiee">[ GitHub ]</a></span>
-                <span class="header_span"><img class='header_icon' src="notion.svg"/><a href="https://gibiee.notion.site/gibiee/b6c823e655254558b2ab034814758244">[ Portfolio ]</a></span> 
+                <img class='header_icon' src="email.svg" style="margin-left:0"/>
+                <span>gibiee@naver.com</span>
+                <img class='header_icon' src="github.svg"/>
+                <a href="https://github.com/gibiee">[ GitHub ]</a>
+                <img class='header_icon' src="notion.svg"/>
+                <a href="https://gibiee.notion.site/gibiee/b6c823e655254558b2ab034814758244">[ Portfolio ]</a>
             </div>
         </div>
 
         <div id="edu">
             <span id="edu_title">Education</span>
             <hr/>
-            <div class="edu_name">Seoul National University of Science and Technology</div>
-            <div class="edu_name">National University</div>
+            <div class="edu_item">
+                <div class="edu_name">Seoul National University of Science and Technology</div>
+            </div>
+            <div class="edu_item">
+                <div class="edu_name">OOO National University</div>
+            </div>
         </div>
-            
 
         <div id="work">
             <div id="work_title">Work Experience</div>
             <hr/>
-            <div>
-                <span class="work_name">Nestyle Inc.</span>
-                <span class="work_pos">Seocho-gu, Seoul</span>
+            <div class="work_item">
+                <div class="work_company">
+                    <span class="work_name">Nestyle Inc.</span>
+                    <span class="work_pos">Seocho-gu, Seoul</span>
+                </div>
+                <div class="work_job">AI Engineer / Researcher</div>
+                <ul class="work_ul">
+                    <li class="work_li">dddd리스트 1</li>
+                    <li class="work_li">리스트 2</li>
+                </ul>
             </div>
-            <div class="work_job">AI Engineer / Researcher</div>
-            <ul class="work_ul">
-                <li class="work_li">dddd리스트 1</li>
-                <li class="work_li">리스트 2</li>
-            </ul>
         </div>
  
         <div id="paper">
             <div id="paper_title">Paper</div>
             <hr/>
-            <div>내용</div>
-        </div>
+            <div class="paper_item">
+                <img class="paper_img" src="k-hairstyle.jpg" />
+                <div class="paper_text">
+                    <div class="paper_name">K-Hairstyle: A Large-scale Korean Hairstyle Dataset for Virtual Hair Editing and Hairstyle Classification</div>
+                    <div class="paper_author">Taewoo Kim*, Chaeyeon Chung*, Sunghyun Park*, Gyojung Gu, <b>Keonmin Nam</b>, Wonzo Choe, Jaesung Lee and Jaegul Choo</div>
+                    <div class="paper_conference">IEEE International Conference on Image Processing (ICIP), 2021, Virtual, Accepted.</div>
+                    <div class="paper_link">
+                        <a href="https://arxiv.org/abs/2102.06288">[Paper]</a>
+                        <a href="https://psh01087.github.io">[Project page]</a>
+                        <a href="https://n.news.naver.com/article/469/0000618850">[News]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper_item">
+                <img class="paper_img" src="k-hairstyle.jpg" />
+                <div class="paper_text">
+                    <div class="paper_name">랜덤성에 기반한 인공지능 오목의 구현</div>
+                    <div class="paper_author">남건민, 천세학</div>
+                    <div class="paper_conference">한국지능정보시스템학회 학술대회논문집, 2020</div>
+                    <div class="paper_link">
+                        <a href="https://arxiv.org/abs/2102.06288">[Paper]</a>
+                    </div>
+                </div>
+            </div>
 
-
-        <div id="div_test">
-            <span id="span_test">테스트</span>
         </div>
+https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10544997
+
     </body>
 
     <script>

@@ -1,0 +1,116 @@
+
+/* HEADER */
+#header {
+    background-color: aliceblue;
+}
+#header_name {
+    text-align: center;
+    font-size: 2rem;
+}
+#header_job {
+    text-align: center;
+    font-size: 1rem;
+}
+#header_links {
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+}
+.header_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+/* CONTENTS */
+hr {
+    border: 0.1rem solid black;
+}
+
+/* EDUCATION */
+#edu {
+    background-color: lightyellow;
+    margin-top: 3rem;
+}
+#edu_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.edu_item {
+    margin-left: 1rem;
+}
+.edu_name {
+    font-weight: bold;
+}
+
+/* EXPERIENCE */
+#work {
+    background-color: deepskyblue;
+    margin-top: 3rem;
+}
+#work_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.work_item {
+    margin-left: 1rem;
+}
+.work_company {
+    background-color: beige;
+}
+.work_name {
+    font-weight: bold;
+}
+.work_pos {
+    float: right;
+    font-style: italic;
+}
+.work_job {
+    font-size: 1rem;
+}
+.work_ul {
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: 3rem;
+}
+.work_li {
+    font-size: 1.3rem;
+}
+
+#paper {
+    background-color: orange;
+    margin-top: 3rem;
+}
+#paper_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.paper_item {
+    display: flex;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.paper_img {
+    height: 7rem;
+}
+.paper_text {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: lightpink;
+    align-self: center;
+}
+.paper_name {
+    font-weight: bold;
+
+}
+.paper_author {
+    font-weight: lighter;
+
+}
+.paper_conference {
+    font-style: italic;
+}
+.paper_link {
+
+}
