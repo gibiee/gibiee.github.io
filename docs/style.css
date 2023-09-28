@@ -1,3 +1,6 @@
+body {
+    margin: 1rem 3rem 1rem 3rem;
+}
 
 /* HEADER */
 #header {
@@ -92,7 +95,12 @@ hr {
     margin-bottom: 1rem;
 }
 .paper_img {
-    height: 7rem;
+    width: 20rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : contain; 
+    background-size : 100% 100%;
 }
 .paper_text {
     display: inline-block;
