@@ -4,24 +4,29 @@ body {
 
 /* HEADER */
 #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: aliceblue;
 }
 #header_name {
-    text-align: center;
     font-size: 2rem;
+    background-color: aquamarine;
 }
 #header_job {
-    text-align: center;
     font-size: 1rem;
+    background-color: blanchedalmond;
 }
 #header_links {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: pink;
-    justify-content: center;
 }
 .header_icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    height: 3rem;
+    width: 3rem;
     margin-left: 1rem;
     margin-right: 0.3rem;
 }
@@ -42,9 +47,13 @@ hr {
 }
 .edu_item {
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 .edu_name {
     font-weight: bold;
+}
+.edu_score {
+    float: right;
 }
 
 /* EXPERIENCE */
@@ -58,6 +67,7 @@ hr {
 }
 .work_item {
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 .work_company {
     background-color: beige;
@@ -72,14 +82,34 @@ hr {
 .work_job {
     font-size: 1rem;
 }
-.work_ul {
-    margin-top: 0;
-    padding-left: 0;
-    margin-left: 3rem;
-}
 .work_li {
     font-size: 1.3rem;
 }
+.major_box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+.major_title {
+    vertical-align: top;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 1rem;
+    border-right: 2px solid #000;
+    margin-right: 1rem;
+    background-color: violet;
+}
+.major_itemBox {
+    display: inline-flex;
+    flex-direction: column;
+}
+.major_item {
+    display: inline-flex;
+    flex-direction: row;
+    height: 5rem;
+    background-color: red;
+}
+
 
 #paper {
     background-color: orange;
@@ -91,6 +121,7 @@ hr {
 }
 .paper_item {
     display: flex;
+    flex-direction: row;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
