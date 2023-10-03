@@ -85,30 +85,35 @@ hr {
 .work_li {
     font-size: 1.3rem;
 }
-.major_box {
-    display: flex;
-    flex-direction: row;
-    margin-left: 3rem;
+
+.major_grid {
+    display: grid;
+    margin-left: 3%;
+    grid-template-columns: 1fr 1.5fr 6fr;
+    grid-gap: 10px;
+    background-color: floralwhite;
 }
-.major_title {
-    vertical-align: top;
-    font-size: 2rem;
-    font-weight: bold;
+.major_title {    
+    grid-row: span 3; /* item 개수를 명시적으로 지정 */
+    text-align: right;
     padding-right: 1rem;
-    border-right: 2px solid #000;
-    margin-right: 1rem;
-    background-color: violet;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-right: 0.1rem solid black;
 }
-.major_itemBox {
-    display: inline-flex;
-    flex-direction: column;
+.major_img {
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 100% 100%;
+    border: 1px solid black;
 }
-.major_item {
-    display: inline-flex;
-    flex-direction: row;
-    height: 5rem;
-    background-color: red;
+.major_text {
+    align-self: center;
+    border: 1px solid black;
 }
+
+
 
 
 #paper {
@@ -119,15 +124,14 @@ hr {
     font-size: 2rem;
     font-weight: bold;
 }
-.paper_item {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+.paper_grid {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background-color: darkcyan;
 }
 .paper_img {
-    width: 20rem;
-    height: 10rem;
+    margin: 1rem;
+    height: 13rem;
     background-repeat: no-repeat;
     background-position: center;
     /* background-size : contain;  */
@@ -136,7 +140,6 @@ hr {
 .paper_text {
     background-color: lightpink;
     margin-left: 1rem;
-    width: 100%;
     align-self: center;
 }
 .paper_name {
@@ -149,7 +152,4 @@ hr {
 }
 .paper_conference {
     font-style: italic;
-}
-.paper_link {
-
 }
