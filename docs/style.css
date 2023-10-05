@@ -31,9 +31,13 @@ body {
     margin-right: 0.3rem;
 }
 
-/* CONTENTS */
-hr {
+/* 공통 요소 */
+.hr_bold {
     border: 0.1rem solid black;
+}
+.hr_light {
+    border: 0.05rem solid black;
+    margin: 0;
 }
 
 /* EDUCATION */
@@ -86,32 +90,40 @@ hr {
     font-size: 1.3rem;
 }
 
-.major_grid {
-    display: grid;
-    margin-left: 3%;
-    grid-template-columns: 1fr 1.5fr 6fr;
-    grid-gap: 10px;
-    background-color: floralwhite;
-}
-.major_title {    
-    grid-row: span 3; /* item 개수를 명시적으로 지정 */
-    text-align: right;
-    padding-right: 1rem;
+#major_title {
     font-weight: bold;
     font-size: 1.5rem;
-    border-right: 0.1rem solid black;
+    margin-left: 3rem;
+}
+
+#major_table {
+    display: inline-table;
+    margin-left: 3rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.major_item {
+    display: table-row;
+    
 }
 .major_img {
-    height: 10rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : 100% 100%;
+    display: table-cell;
+    width: 16rem;
+    height: 12rem;
+    padding: 1rem;
     border: 1px solid black;
 }
 .major_text {
-    align-self: center;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    padding: 1rem;
     border: 1px solid black;
 }
+
+
+
 
 
 
@@ -126,12 +138,13 @@ hr {
 }
 .paper_grid {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 1.5fr 5fr;
     background-color: darkcyan;
 }
 .paper_img {
     margin: 1rem;
-    height: 13rem;
+    width: 20rem;
+    height: 15rem;
     background-repeat: no-repeat;
     background-position: center;
     /* background-size : contain;  */
