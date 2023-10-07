@@ -15,15 +15,21 @@ body {
     font-size: 0;
     background-color: red;
 }
-#button_plus,
-#button_minus  {
+#button_plus {
     width: 1.5rem;
     height: 1.5rem;
-    font-size: 1rem;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    background-color: burlywood;
+    background-image: url('imgs/btn_zoomIn.jpg');
+    background-size : 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#button_minus {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('imgs/btn_zoomOut.jpg');
+    background-size : 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #header_name {
@@ -41,8 +47,8 @@ body {
     background-color: pink;
 }
 .header_icon {
-    height: 3rem;
-    width: 3rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin-left: 1rem;
     margin-right: 0.3rem;
 }
@@ -113,33 +119,29 @@ body {
 }
 
 #major_table {
-    display: inline-table;
     margin-left: 3rem;
-    border: 1px solid black;
-    border-collapse: collapse;
 }
 
 .major_item {
     display: table-row;
-    
 }
 .major_img {
     display: table-cell;
     width: 16rem;
     height: 12rem;
-    padding: 1rem;
-    border: 1px solid black;
+    padding: 0.5rem;
+}
+.major_name {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 .major_text {
     display: table-cell;
-    width: 100%;
     vertical-align: middle;
     padding: 1rem;
-    border: 1px solid black;
+    font-size: 1rem;
+    white-space: pre-line;
 }
-
-
-
 
 
 
@@ -161,10 +163,9 @@ body {
     margin: 1rem;
     width: 20rem;
     height: 15rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-size : contain;  */
     background-size : 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .paper_text {
     background-color: lightpink;
@@ -181,4 +182,23 @@ body {
 }
 .paper_conference {
     font-style: italic;
+}
+
+#paper_table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+.paper_item {   
+    display: table-row;
+}
+.paper_img {
+    display: table-cell;
+    width: 20rem;
+    height: 15rem;
+    border: 3px solid black;
+}
+.paper_text {
+    display: table-cell;
+    vertical-align: middle;
+    border: 3px solid black ;
 }
