@@ -108,8 +108,13 @@ body {
 .work_job {
     font-size: 1rem;
 }
-.work_li {
+.work_description {
     font-size: 1.3rem;
+    white-space: pre-line;
+}
+.work_description::first-line {
+    /* 첫줄 줄바꿈 제거 */
+    line-height: 0;
 }
 
 #major_title {
@@ -150,55 +155,34 @@ body {
     background-color: orange;
     margin-top: 3rem;
 }
-#paper_title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-.paper_grid {
-    display: grid;
-    grid-template-columns: 1.5fr 5fr;
-    background-color: darkcyan;
-}
-.paper_img {
-    margin: 1rem;
-    width: 20rem;
-    height: 15rem;
-    background-size : 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.paper_text {
-    background-color: lightpink;
-    margin-left: 1rem;
-    align-self: center;
-}
-.paper_name {
-    font-weight: bold;
-
-}
-.paper_author {
-    font-weight: lighter;
-
-}
-.paper_conference {
-    font-style: italic;
-}
-
 #paper_table {
-    border: 3px solid black;
-    border-collapse: collapse;
 }
 .paper_item {   
     display: table-row;
 }
 .paper_img {
     display: table-cell;
+    margin: 1rem;
     width: 20rem;
     height: 15rem;
-    border: 3px solid black;
 }
 .paper_text {
     display: table-cell;
     vertical-align: middle;
-    border: 3px solid black ;
+    background-color: lightpink;
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+#paper_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.paper_name {
+    font-weight: bold;
+}
+.paper_author {
+    font-weight: lighter;
+}
+.paper_conference {
+    font-style: italic;
 }
