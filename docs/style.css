@@ -1,15 +1,11 @@
+html {
+    font-size: 12px;
+}
 body {
     margin: 0rem 3rem 1rem 3rem;
-    font-family: serif;
-}
-
-/* HEADER */
-#header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+    /* letter-spacing: -0.05rem; */;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: serif; */
 }
 #buttons {
     text-align: right;
@@ -33,27 +29,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#header_name {
-    font-size: 2rem;
-    background-color: aquamarine;
-}
-#header_job {
-    font-size: 1rem;
-    background-color: blanchedalmond;
-}
-#header_links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: pink;
-}
-.header_icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 0.3rem;
-}
-
 /* 공통 요소 */
 .hr_bold {
     border: 0.1rem solid black;
@@ -63,10 +38,39 @@ body {
     margin: 0;
 }
 
+/* HEADER */
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+#header_name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+#header_job {
+    font-size: 1.3rem;
+}
+#header_links {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+}
+.header_icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
 /* EDUCATION */
 #edu {
     background-color: lightyellow;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 #edu_title {
     font-size: 2rem;
@@ -86,7 +90,7 @@ body {
 /* EXPERIENCE */
 #work {
     background-color: deepskyblue;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 #work_title {
     font-size: 2rem;
@@ -171,6 +175,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     background-color: lightpink;
+    font-size: 1rem;
     padding-left: 1.5rem;
     line-height: 1.5rem;
 }
