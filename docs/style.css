@@ -1,8 +1,8 @@
 html {
-    font-size: 12px;
+    font-size: 16px;
 }
 body {
-    margin: 0rem 3rem 1rem 3rem;
+    margin: 0rem 10rem 1rem 10rem;
     /* letter-spacing: -0.05rem; */;
     font-family: 'Times New Roman', Times, serif;
     /* font-family: serif; */
@@ -80,11 +80,23 @@ body {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+.edu_univ {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+}
 .edu_name {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .edu_score {
-    float: right;
+    font-size: 1.2rem;
+    margin-left: auto;
+    background-color: aqua;
+}
+.edu_description {
+    font-size: 1.3rem;
+    white-space: pre-line;
 }
 
 /* EXPERIENCE */
@@ -101,20 +113,23 @@ body {
     margin-bottom: 1rem;
 }
 .work_company {
+    display: flex;
+    align-items: center;
     background-color: beige;
 }
 .work_name {
+    font-size: 1.5rem;
     font-weight: bold;
 }
-.work_pos {
-    float: right;
+.work_info {
+    font-size: 1.2rem;
     font-style: italic;
-}
-.work_job {
-    font-size: 1rem;
+    margin-left: auto;
+    background-color: pink;
 }
 .work_description {
-    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
     white-space: pre-line;
 }
 .work_description::first-line {
