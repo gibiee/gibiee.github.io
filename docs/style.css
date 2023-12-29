@@ -67,108 +67,42 @@ body {
     margin-right: 0.5rem;
 }
 
-/* EDUCATION */
-#edu {
+/* CONTENT */
+.content_box {
     background-color: lightyellow;
     margin-top: 2rem;
 }
-#edu_title {
+.content_title {
     font-size: 2rem;
     font-weight: bold;
 }
-.edu_item {
+.content_item {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
-.edu_univ {
+.content_subtitle {
     display: flex;
     align-items: center;
     background-color: lightblue;
 }
-.edu_name {
+.content_name {
     font-size: 1.5rem;
     font-weight: bold;
 }
-.edu_score {
-    font-size: 1.2rem;
-    margin-left: auto;
-    background-color: aqua;
-}
-.edu_description {
-    font-size: 1.3rem;
-    white-space: pre-line;
-}
-
-/* EXPERIENCE */
-#work {
-    background-color: deepskyblue;
-    margin-top: 2rem;
-}
-#work_title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-.work_item {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-.work_company {
-    display: flex;
-    align-items: center;
-    background-color: beige;
-}
-.work_name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.work_info {
+.content_date {
     font-size: 1.2rem;
     font-style: italic;
     margin-left: auto;
     background-color: pink;
 }
-.work_description {
+.content_description {
     margin-left: 0.5rem;
     font-size: 1rem;
     white-space: pre-line;
 }
-.work_description::first-line {
-    /* 첫줄 줄바꿈 제거 */
-    line-height: 0;
+.content_description::first-line {
+    line-height: 0; /* 첫줄 줄바꿈 제거 */
 }
-
-#major_title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-left: 3rem;
-}
-
-#major_table {
-    margin-left: 3rem;
-}
-
-.major_item {
-    display: table-row;
-}
-.major_img {
-    display: table-cell;
-    width: 16rem;
-    height: 12rem;
-    padding: 0.5rem;
-}
-.major_name {
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-.major_text {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 1rem;
-    font-size: 1rem;
-    white-space: pre-line;
-}
-
-
 
 
 #paper {
