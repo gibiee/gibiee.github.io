@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
     <script src="zoom.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <title>KeonMin Nam</title>
 </head>
 <body>
     <div id="buttons">
@@ -17,11 +15,11 @@
         <div id="header_name">KeonMin Nam</div>
         <div id="header_job">AI Engineer</div>
         <div id="header_links">
-            <img class='header_icon' src="imgs/icon_email.jpg" style="margin-left:0"/>
+            <img class='header_icon' src="imgs/icon_email.png" style="margin-left:0"/>
             <span>gibiee@naver.com</span>
-            <img class='header_icon' src="imgs/icon_github.jpg"/>
+            <img class='header_icon' src="imgs/icon_github.svg"/>
             <a href="https://github.com/gibiee">GitHub</a>
-            <img class='header_icon' src="imgs/icon_notion.jpg"/>
+            <img class='header_icon' src="imgs/icon_notion.ico"/>
             <a href="https://gibiee.notion.site/gibiee/b6c823e655254558b2ab034814758244">Portfolio</a>
         </div>
     </div>
@@ -31,18 +29,18 @@
         <hr class="hr_bold"/>
         <div class="content_item">
             <div class="content_subtitle">
-                <span class="content_name">서울과학기술대학교</span>
+                <span class="content_name">Seoul National University of Science and Technology</span>
                 <span class="content_date">2014.03 ~ 2021.02</span>
             </div>
             <div class="content_description">
-                • 컴퓨터공학과 전공 학사
-                • 빅데이터경영공학 부전공
-                • 학점 / 4.5
+                • Bachelor of Computer Science and Engineering
+                • Minor in Big Data Management Engineering
+                • GPA : 3.97 / 4.5
             </div>
         </div>
         <div class="content_item">
             <div class="content_subtitle">
-                <span class="content_name">창동고등학교</span>
+                <span class="content_name">Changdong High School</span>
                 <span class="content_date">2011.03 ~ 2014.02</span>
             </div>
             <div class="content_description">
@@ -55,49 +53,109 @@
         <hr class="hr_bold"/>
         <div class="content_item">
             <div class="content_subtitle">
-                <span class="content_name">(주)내스타일 / AI Engineer</span>
+                <span class="content_name"><a href="https://www.nestyle.ai/">NESTYLE, Inc.</a> / AI Engineer</span>
                 <span class="content_date">2020.10 ~ Now</span>
             </div>
             <div class="content_description">
-                • 2019년 설립된 AI스타트업에 초기 멤버(2번째 개발자)로 합류.
-                • AI Engineer로서, AI solution 개발
-                • Computer Vision 및 Generative AI(이미지 생성, 변환 등) 관련 프로젝트 다수 진행.
-                • 주요 프로젝트
-                　◦ 얼굴 복원
-                　　- 123456789
-                　　- 일이삼사오육칠
-                　　- 테스트 중입니다
-                　◦ 웹툰 관련
+                • Joined the AI startup established in 2019 as an early member (2nd developer).
+                • Led multiple projects in Computer Vision and Generative AI (Image generation, translation, etc.).
+                • Developed deep learning models that achieved better performance than the SOTA(state-of-the-art) model for a specific problem.
+                • Key projects :
+                　◦ 유튜브 썸네일용 얼굴복원
+                　　- KBS 미디어랩과 공동연구
+                　　- 뮤직뱅크와 같은 음악 방송 프로그램에서 인물 한명에 대해서 촬영된 직캠 영상이 유튜브에 업로드됩니다.
+                　　- 그 영상의 썸네일 이미지는 다양한 이유(안무에 의한 움직임, 카메라 무빙으로 인한 흔들림, 조명 등)로 인해 품질이 열화됩니다.
+                　　- 기존 얼굴복원 모델들은 인물의 특징(identity)이 변화되는 문제(특히 눈의 형태가 쉽게 변형됨)가 있습니다.
+                　　- 따라서, 썸네일 이미지의 품질을 개선하면서 인물의 identity를 유지하는 모델을 자체 개발하였습니다.
+                　◦ 한국인 얼굴 이미지 생성
+                　　- 나이 등을 control 할 수 있는 기능
+                　　- 
+                　◦ 가상 헤어염색
+                　　- 상용 프로그램(네이버 스노우, 카카오헤어) 보다 좋은 성능
+                　　- 
             </div>
         </div>
     </div>
 
-    <div id="paper">
-        <div id="paper_title">Paper</div>
+    <div class="content_box">
+        <div class="content_title">Papers</div>
         <hr class="hr_bold"/>
+        <div class="content_item">
+            <div class="text_bold">K-Hairstyle: A Large-scale Korean Hairstyle Dataset for Virtual Hair Editing and Hairstyle Classification</div>
+            <div class="text_lighter">Taewoo Kim*, Chaeyeon Chung*, Sunghyun Park*, Gyojung Gu, <b>Keonmin Nam</b>, Wonzo Choe, Jaesung Lee and Jaegul Choo</div>
+            <div class="text_italic">IEEE International Conference on Image Processing (ICIP), 2021, Virtual, Accepted.</div>
+            <a href="https://arxiv.org/abs/2102.06288">[Arxiv]</a>
+            <a href="https://psh01087.github.io">[Project page]</a>
+            <a href="https://n.news.naver.com/article/469/0000618850">[News]</a>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">랜덤성에 기반한 인공지능 오목의 구현</div>
+            <div class="text_lighter"><b>남건민</b>, 천세학</div>
+            <div class="text_italic">한국지능정보시스템학회 학술대회논문집, 2020</div>
+            <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10544997">[DBpia]</a>
+        </div>
+    </div>
 
-        <div id="paper_table">
-            <div class="paper_item">
-                <img class="paper_img" src="imgs/paper_2.jpg"/>
-                <div class="paper_text">
-                    <div class="paper_name">K-Hairstyle: A Large-scale Korean Hairstyle Dataset for Virtual Hair Editing and Hairstyle Classification</div>
-                    <div class="paper_author">Taewoo Kim*, Chaeyeon Chung*, Sunghyun Park*, Gyojung Gu, <b>Keonmin Nam</b>, Wonzo Choe, Jaesung Lee and Jaegul Choo</div>
-                    <div class="paper_conference">IEEE International Conference on Image Processing (ICIP), 2021, Virtual, Accepted.</div>
-                    <a href="https://arxiv.org/abs/2102.06288">[arxiv]</a>
-                    <a href="https://psh01087.github.io">[project page]</a>
-                    <a href="https://n.news.naver.com/article/469/0000618850">[news]</a>
-                </div>
-            </div>
+    <div class="content_box">
+        <div class="content_title">Patents</div>
+        <hr class="hr_bold"/>
+        <div class="content_item">
+            <div class="text_bold">Fitting costume-including segmentation generation method for virtual fitting</div>
+            <div class="text_lighter">구교정, <b>남건민</b>, 김우석, 최승환, 박성현, 이용균</div>
+            <div class="text_italic">Application number(date) : 1020210049995 (2021.04.16)</div>
+            <a href="https://doi.org/10.8080/1020210049995">[Kipris]</a>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Virtual fitting method supporting high-resolution image</div>
+            <div class="text_lighter">구교정, <b>남건민</b>, 김우석, 최승환, 박성현, 이용균</div>
+            <div class="text_italic">Application number(date) : 1020210049800 (2021.04.16)</div>
+            <a href="https://doi.org/10.8080/1020210049800">[Kipris]</a>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Method for warping costume based on cloth-removed image</div>
+            <div class="text_lighter">구교정, <b>남건민</b>, 김우석, 최승환, 박성현, 이용균</div>
+            <div class="text_italic">Application number(date) : 1020210049773 (2021.04.16)</div>
+            <a href="https://doi.org/10.8080/1020210049773">[Kipris]</a>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Costume region removal method for flexible virtual fitting image generation</div>
+            <div class="text_lighter">구교정, <b>남건민</b>, 김우석, 최승환, 박성현, 이용균</div>
+            <div class="text_italic">Application number(date) : 1020210045512 (2021.04.07)</div>
+            <a href="https://doi.org/10.8080/1020210045512">[Kipris]</a>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Method for dyeing hair by using computer device</div>
+            <div class="text_lighter"><b>남건민</b>, 구교정, 김우석</div>
+            <div class="text_italic">Application number(date) : 1020210027601 (2021.03.02)</div>
+            <a href="https://doi.org/10.8080/1020210027601">[Kipris]</a>
+        </div>
+    </div>
 
-            <div class="paper_item">
-                <img class="paper_img" src="imgs/paper_1.jpg"/>
-                <div class="paper_text">
-                    <div class="paper_name">랜덤성에 기반한 인공지능 오목의 구현</div>
-                    <div class="paper_author">남건민, 천세학</div>
-                    <div class="paper_conference">한국지능정보시스템학회 학술대회논문집, 2020</div>
-                    <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10544997">[DBpia]</a>
-                </div>
+    <div class="content_box">
+        <div class="content_title">Competitions</div>
+        <hr class="hr_bold"/>
+        <div class="content_item">
+            <div class="content_subtitle">
+                <span class="content_name"><a href="https://dacon.io/competitions/official/235626/leaderboard">Dacon, Monthly Dacon Computer Vision Learning Competition</a></span>
+                <span class="content_date">2020.08 ~ 2020.09</span>
             </div>
+            <div class="content_description">
+                • Achieved 6th Place in the competition awarding the top 10 teams.
+            </div>
+        </div>
+    </div>
+
+    <div class="content_box">
+        <div class="content_title">Certifications</div>
+        <hr class="hr_bold"/>
+        <div class="content_item">
+            <div class="text_bold">Engineer Information Processing (2019.11.22)</div>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Word Processor Specialist (2019.03.22)</div>
+        </div>
+        <div class="content_item">
+            <div class="text_bold">Craftsman Information Processing (2015.12.14)</div>
         </div>
     </div>
 </body>
