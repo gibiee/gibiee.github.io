@@ -10,7 +10,6 @@ body {
 #buttons {
     text-align: right;
     font-size: 0;
-    background-color: red;
 }
 #button_plus {
     width: 1.5rem;
@@ -44,7 +43,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
 }
 #header_name {
     font-size: 3rem;
@@ -70,7 +68,6 @@ body {
 
 /* CONTENT */
 .content_box {
-    background-color: lightyellow;
     margin-top: 2rem;
 }
 .content_title {
@@ -84,19 +81,16 @@ body {
 .content_subtitle {
     display: flex;
     align-items: center;
-    background-color: lightblue;
 }
 .content_name {
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: cornflowerblue;
     width: 80%;
 }
 .content_date {
     font-size: 1.2rem;
     font-style: italic;
     margin-left: auto;
-    background-color: pink;
 }
 .content_description {
     margin: 0;
