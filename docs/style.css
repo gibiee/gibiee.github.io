@@ -7,11 +7,23 @@ body {
     font-family: 'Times New Roman', Times, serif;
     /* font-family: serif; */
 }
-#buttons {
-    text-align: right;
-    font-size: 0;
+#head {
+    display: flex;
 }
-#button_plus {
+#head_url {
+    align-self: center;
+}
+#head_eng {
+    align-self: center;
+    margin-left: auto;
+}
+#head_kor {
+    align-self: center;
+    margin-left: 3%;
+}
+#head_plus {
+    align-self: center;
+    margin-left: 5%;
     width: 1.5rem;
     height: 1.5rem;
     background-image: url('imgs/btn_zoomIn.jpg');
@@ -19,7 +31,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-#button_minus {
+#head_minus {
+    align-self: center;
     width: 1.5rem;
     height: 1.5rem;
     background-image: url('imgs/btn_zoomOut.jpg');
