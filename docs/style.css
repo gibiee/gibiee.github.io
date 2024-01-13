@@ -116,10 +116,12 @@ a:hover { color: red; }
 }
 .content_description ul {
     padding-left : 1rem;
+    font-size: 1rem;
 }
 .content_description ul ul {
     padding-left : 1rem;
     list-style-type: '- ';
+    font-size: 1rem;
 }
 
 .text_bold {
