@@ -6,8 +6,9 @@ body {
     margin: 0rem 10rem 1rem 10rem;
     font-family: 'Times New Roman', Times, serif;
 }
-a { color: blue; }
+a { color: blue; text-decoration: none; }
 a:hover { color: red; }
+a:active { text-decoration: underline; }
 
 #head {
     display: flex;
