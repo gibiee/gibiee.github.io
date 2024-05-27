@@ -9,4 +9,3 @@ function btn_minus() {
     var currentSize = parseFloat(current.slice(0,-2));
     document.documentElement.style.fontSize = currentSize - 0.5 + "px"
 }
-
