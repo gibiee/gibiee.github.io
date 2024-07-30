@@ -16,11 +16,11 @@ a:active { text-decoration: underline; }
 #head_url {
     align-self: center;
 }
-#head_eng {
+#head_en {
     align-self: center;
     margin-left: auto;
 }
-#head_kor {
+#head_ko {
     align-self: center;
     margin-left: 3%;
 }
