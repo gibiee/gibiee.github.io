@@ -1,8 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta http-equiv="refresh" content="0; URL='index_ko.html'" />
+  <meta charset="UTF-8">
+  <title>남건민의 페이지</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    .container-profile {
+      height: 600px;
+      margin-right: 60px;
+    }
+
+    .container-profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .container-intro {
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    .container-icon {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      justify-items: center;
+    }
+
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .icon-item a {
+      display: flex;
+      flex-direction: column; /* 수직 정렬 */
+      align-items: center; /* 중앙 정렬 */
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+    }
+
+    .icon-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .icon-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- 좌측 프로필 이미지 -->
+  <div class="container-profile">
+    <img src="./imgs/profile.jpg" alt="profile">
+  </div>
+
+  <!-- 우측 소개 텍스트와 아이콘 -->
+  <div class="container-content">
+
+    <!-- 소개 텍스트 -->
+    <div class="container-intro">
+      <h2>안녕하세요! 👋</h2>
+      <h3>상상을 구현하는 개발자 남건민입니다.</h3>
+      <p>Computer Vision 및 이미지 생성/변환 분야에서 성장 중입니다.</p>
+      <p>📧 gibiee@naver.com</p>
+    </div>
+
+    <!-- 아이콘 -->
+    <div class="container-icon">
+      <div class="icon-item">
+        <a href="./cv_250430.pdf" target="_blank">
+          <img src="./imgs/icon_cv.svg" alt="icon_cv"/>
+          <span>이력서(CV)</span>
+        </a>
+      </div>
+      <div class="icon-item">
+        <a href="./portfolio_250430.pdf" target="_blank">
+          <img src="./imgs/icon_portfolio.svg" alt="icon_portfolio"/>
+          <span>포트폴리오</span>
+        </a>
+      </div>
+      <div class="icon-item">
+        <a href="https://github.com/gibiee" target="_blank">
+          <img src="./imgs/icon_github.svg" alt="icon_github"/>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div class="icon-item">
+        <a href="https://www.linkedin.com/in/keonmin-nam/" target="_blank">
+          <img src="./imgs/icon_linkedin.svg" alt="icon_linkedin"/>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
